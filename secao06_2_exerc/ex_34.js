@@ -1,0 +1,1 @@
+function compara2Strings (string1, string2){}
