@@ -1,0 +1,52 @@
+processamento(valor1, valor2, valor3)
+
+
+//oo
+
+objeto {
+    valor1,
+    valor2,
+    valor3,
+    processamento() {
+        //...
+    }
+}
+
+objeto.processamento() //Foco passo a ser o objeto
+
+//Principios
+/*
+1 - Abstração - 
+Pense em carro... tem acelerar... ligar desligar... ligar para brisa
+Sistema do Detran... cabe essas coisas?
+não... vc quer placa renavam etc etc... pertinentes ao Detran
+A abstração e como mapear envolve entender as relevâncias
+
+2 - Encapsulamento
+Detalhes de implementação escondidos
+O que precisa saber do carro pra pilotar o carro?
+Ligar, dirigir, colocar combustível
+E importante onde fica o carburador? Provavelmente pra maioria dos motoristas
+Manter os objetos com bom grau de independencia e encapsulamento é saudavel pois
+a implementacao de um objeto e mudanças nele - tentando manter a interface com o mínimo de mudanças
+faz com que os problemas de um objeto e emlhorias não façam ter efeitos cascata no sistema
+
+3 - Herança
+Herança do tipo: é um
+Herança é: receber atributos e comportamentos de um objeto pai
+
+Composição do tipo tem um: carro tem um motor
+Da pra compor o carro com outros objetos mais complexos
+
+Herança...
+Ser humano é mamifero, mamifero é um animal
+
+Animal é o pai...
+Mamifero é um animal... não é o único
+
+4 - polimorfismo
+Princípio do qual duas classes derivadas de uma mesma superclasse podem invocar métodos com a mesma
+identificação mas comportamentos distintos
+
+
+*/
