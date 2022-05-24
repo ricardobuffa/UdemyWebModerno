@@ -44,3 +44,5 @@ const o2 = { c: 3, a: 4 }
 
 const obj2 = Object.assign(o2,dest)
 console.log(obj2)
+
+
