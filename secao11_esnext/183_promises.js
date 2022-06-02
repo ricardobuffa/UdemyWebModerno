@@ -3,10 +3,10 @@
 // Se sim callback que funcionou? não então chama a callback de erro
 
 function falarDepoisDe(segundos, frase) {
-    return new Promise((resolve, reject) =>{
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(frase)
-        }, segundos*1000)
+        }, segundos * 1000)
     })
 }
 
