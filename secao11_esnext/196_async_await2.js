@@ -28,6 +28,7 @@ async function gerarMegaSena(qtdeNumeros) {
 }
 
 gerarMegaSena(15).then(console.log)
-    //.catch(console.log)
+    .catch(console.log)
+    
 
 //Funcao que gera os numeros da megasena numeros que ja foram sorteados - nao podem ser duplicidades
