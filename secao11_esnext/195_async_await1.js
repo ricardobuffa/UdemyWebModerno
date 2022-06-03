@@ -33,6 +33,20 @@ async function executar() {
     await esperarPor(1500)
     console.log(`executar3 ${valor + 2}`)    
 
+    return valor + 3
 }
 
 executar()
+
+//Se eu fizer isso vou ter uma promise
+//const v = executar()
+//console.log(v)
+
+
+
+async function executarDeVerdade() {
+    const valor = await executar()
+    console.log(valor)
+}
+
+executarDeVerdade()
