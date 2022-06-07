@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desafiozinho</title>
+
+    <script>
+        var expander = document.querySelectorAll('.expand');
+        for (var i = 0; i < expander.length; ++i) {
+            console.log(expander[i])
+            expander[i].onclick = function () {
+                var ul = this.parentElement.querySelectorAll('ul')[0];
+
+                if (ul.offsetHeight > 0) {
+                    ul.style.display = 'none';
+                } else {
+                    ul.style.display = 'block';
+                }
+            }
+        }
+    </script>
+
+    <style>
+        
+    </style>
+    
+    
+    <ul>
+        <li>
+            <a class="expand">Root</a>
+            <ul>
+                <li>
+                    <a class="expand">Child</a>
+                    <ul>
+                        <li>
+                            <a class="expand">Super Child</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    
+    </head>
+
+</html>

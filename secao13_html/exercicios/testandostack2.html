@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desafiozinho</title>
+
+    <script>
+        document.querySelector('.tree-structure').addEventListener('click', (e) => {
+            const el = e.target;
+            const sibling = el.nextSibling.nextSibling;
+
+            if (el && el.className == 'toggle' && sibling) {
+                sibling.classList.toggle('show');
+            }
+        });
+    </script>
+
+    <style>
+        ul ul {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul class="tree-structure">
+        <li>
+          <button class="toggle">1st Level</button>
+      
+          <ul>
+            <li>
+              <button class="toggle">2nd Level</button>
+      
+              <ul>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="toggle">2nd Level</button>
+      
+              <ul>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <button class="toggle">1st Level</button>
+      
+          <ul>
+            <li>
+              <button class="toggle">2nd Level</button>
+      
+              <ul>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="toggle">2nd Level</button>
+      
+              <ul>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button class="toggle">3rd Level</button>
+      
+                  <ul>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                    <li>
+                      <button class="toggle">4th Level</button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>   <ul>
+        <li><span class="ele">One</span>
+            <ul>
+                <li><span class="ele">Two</span>
+                    <ul>
+                        <li><span class="ele">Three</span>
+                            <ul>
+                                <li><span class="ele">Four</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li><span class="ele">One</span>
+            <ul>
+                <li><span class="ele">Two</span>
+                    <ul>
+                        <li><span class="ele">Three</span>
+                            <ul>
+                                <li><span class="ele">Four</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li><span class="ele">One</span>
+            <ul>
+                <li><span class="ele">Two</span>
+                    <ul>
+                        <li><span class="ele">Three</span>
+                            <ul>
+                                <li><span class="ele">Four</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li><span class="ele">One</span>
+            <ul>
+                <li><span class="ele">Two</span>
+                    <ul>
+                        <li><span class="ele">Three</span>
+                            <ul>
+                                <li><span class="ele">Four</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
