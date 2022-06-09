@@ -41,10 +41,20 @@
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
 
 <script>
+    let el = document.querySelectorAll('[wm-folder]');
+    console.log(el);
+        
+        /*while (el) {
+            console.log(el);
+            el = el.nextElementSibling;
+        }*/
     document.querySelectorAll('[wm-folder]').forEach(folder => {
+        //console.log(folder)
+        
         folder.onclick = function(e) {
             //debugger
             //console.log('teste')
+            console.log(folder.nextElementSibling)
             const ul = folder.nextElementSibling
             //console.log(ul)
             const d = ul.style.display;
