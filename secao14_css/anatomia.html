@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .selector {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /* multiplos valores*/
+            border: solid 5px navy; /*shorthand property*/
+            font-family: Helvetica, monospace; /*alternativa a primeira nao deu certo? tenta a segunda*/
+            /* funções */
+            width: calc(100% - 150px);
+            background-color: rgb(34, 153, 189);
+        }
+
+        /*Usando uma pseudo-classe - usar dois pontos */
+        .selector:hover {
+            background-color: orangered;
+
+        }
+
+        /* Usando um pseudo-elemento - usar duas vezes dois pontos */
+        .selector::first-letter {
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>
