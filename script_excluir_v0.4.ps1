@@ -76,6 +76,9 @@ attrib +r +s C:\Windows\Tasks
 Exceto diretorios #>
 Get-ChildItem -Path  'C:\Windows\Migration' -Force | ? { ! $_.PsIsContainer } | Remove-Item -force
 
+<# Removendo as entradas de firewall que contenham o nome block vilnerabliti #>
+Remove-NetFirewallRule -DisplayName "block vilnerabliti"
+
 <#Limpando os arquivos: script poweshell e vbs#>
 Get-ChildItem -Path  'C:\temp' -Force | ? {$_.FullName -match 'removevirus.vbs'} | Remove-Item -force 
 Get-ChildItem -Path  'C:\temp' -Force | ? {$_.FullName -match 'script_excluir_v0.4.ps1'} | Remove-Item -force 
